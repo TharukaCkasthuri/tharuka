@@ -912,10 +912,12 @@ img {
 
 @media (max-width: 768px) {
     .anim-placeholder {
-        width: clamp(96px, 22vw, 140px);
+        width: 56px;
+        height: 56px;
         aspect-ratio: 1 / 1;
-        border-radius: 20px;
-        padding: 0.4rem;
+        border-radius: 12px;
+        padding: 0.2rem;
+        opacity: 0.85;
     }
 
     .anim-placeholder img {
@@ -925,6 +927,18 @@ img {
     }
 }
 
+@media (max-width: 768px) {
+    .about-anim {
+        align-self: flex-start;
+        margin-top: 0.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .anim-placeholder {
+        filter: grayscale(20%);
+    }
+}
 
 @media (max-width: 768px) {
     .about-text {
