@@ -900,3 +900,57 @@ img {
 *::after {
     box-sizing: border-box;
 }
+
+@media (max-width: 768px) {
+    .about-row {
+        grid-template-columns: auto 1fr;
+        gap: 1rem;
+        padding: 1.4rem;
+        align-items: start;
+    }
+}
+
+@media (max-width: 768px) {
+    .anim-placeholder {
+        max-width: 64px;
+        aspect-ratio: 1 / 1;
+        border-radius: 14px;
+        padding: 0.3rem;
+    }
+
+    .anim-placeholder img {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        text-align: left;
+    }
+
+    .about-text h3 {
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-text {
+        text-align: left;
+    }
+
+    .about-text h3 {
+        margin-top: 0;
+        font-size: 0.95rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
