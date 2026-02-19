@@ -638,6 +638,8 @@ img {
     justify-content: center;
 
     z-index: 999;
+    overflow-y: auto;
+    padding: 1rem;
 }
 
 /* Modal content */
@@ -655,6 +657,8 @@ img {
 
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.2);
     position: relative;
+    max-height: 90vh;
+    overflow-y: auto;
 }
 
 .modal-content h3 {

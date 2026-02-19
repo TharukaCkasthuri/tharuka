@@ -52,41 +52,35 @@
         </section>
         <section class="thesis-section">
             <p>
-                Federated Learning (FL) is a promising distributed learning method that enables edge devices to
+                Federated Learning (FL) is a promising distributed learning method that enables multiple clients to
                 collaboratively train a shared model without sharing their raw data thus preserving privacy. However, in
-                practical implementations, client data are typically
-                non-independent and identically distributed (non-IID). This resulting in heterogeneous learning dynamics
-                and
-                unequal benefits across participants. Improvements in average global accuracy can mask performance
-                degradation for disadvantaged clients, highlighting a structural fairness challenge in FL. This thesis
-                argues that achieving fairness under non-IID in FL requires explicit understanding and modeling of
-                client behavioral heterogeneity rather than uniform aggregation of client updates.
+                practical implementations, client data are typically non-independent and identically distributed
+                (non-IID). This resulting in heterogeneous learning dynamics and unequal benefits across participants.
+                Improvements in average global performance can mask performance degradation for disadvantaged clients,
+                highlighting a structural fairness challenge in FL. This thesis argues that achieving fairness under
+                non-IID FL requires explicit understanding and modeling of client behavioral heterogeneity rather than
+                uniform aggregation of client updates.
             </p>
             <p>
                 In addressing the issue of fairness in FL under data heterogeneity, the thesis first studies and
-                analyzes
-                clients' deviating behavior during the federated training process. An eccentricity-based approach is
-                introduced to quantify deviations in local models and data representations within the global model,
-                enabling
-                systematic identification of atypical contribution and benefit patterns. The insights gained are then
-                used
-                to develop novel fairness-aware FL solutions for heterogeneous distributed learning setups. First it
-                proposes a fairness-aware aggregation framework that adapts client influence based on local performance
-                signals. By dynamically weighting client updates and adjusting local optimization to emphasize hard
-                examples, the method reduces disparities across heterogeneous clients while maintaining competitive
-                global
-                performance. Second, the thesis introduces a clients distribution-aware framework that models latent
-                similarities among clients through persistent grouping based on label distributions. Cluster-level
-                models
-                and hierarchical knowledge distillation integrate inter-client structure into the learning process,
-                enhancing fairness metrics along with overall accuracy.
+                analyzes clients' deviating behavior during the federated training process. An eccentricity-based
+                approach is introduced to quantify deviations in local models and data representations within the global
+                model, enabling systematic identification of atypical contribution and benefit patterns. The insights
+                gained are then used to develop novel fairness-aware FL solutions for heterogeneous distributed learning
+                setups. Then it proposes a fairness-aware aggregation framework called \algname{FeDABoost} that adapts
+                client influence based on local performance signals. By dynamically weighting client updates and
+                adjusting local optimization to emphasize hard examples, the method reduces disparities across
+                heterogeneous clients while maintaining competitive global performance. Later, the thesis introduces
+                \algname{DEFFT}, a clients distribution-aware framework that models latent similarities among clients
+                through persistent grouping based on label distributions. Cluster-level models and hierarchical
+                knowledge distillation integrate inter-client structure into the learning process, enhancing fairness
+                metrics along with overall accuracy.
             </p>
             <p>
-                Across multiple benchmark datasets, the proposed approaches demonstrate that principled to modeling
-                heterogeneity can lead to measurable improvements in fairness without compromising global accuracy. The
-                three discussed studies together establishes a structured framework for mitigating unequal benefits in
-                FL
-                under non-IID data distributions.
+                Across multiple benchmark datasets, the proposed approaches demonstrate that a principled way to
+                modeling heterogeneity can lead to measurable improvements in fairness without compromising global
+                performance. The three discussed studies together establish a structured framework for mitigating
+                unequal benefits in FL under non-IID data distributions.
             </p>
         </section>
 
