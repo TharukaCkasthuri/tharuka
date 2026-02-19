@@ -946,5 +946,6 @@ img {
 @media (max-width: 768px) {
     .about-anim {
         margin-top: 0.2rem;
+        align-self: start;
     }
 }
