@@ -938,19 +938,3 @@ img {
         line-height: 1.6;
     }
 }
-
-@media (max-width: 768px) {
-    .about-text {
-        text-align: left;
-    }
-
-    .about-text h3 {
-        margin-top: 0;
-        font-size: 0.95rem;
-    }
-
-    .about-text p {
-        font-size: 0.95rem;
-        line-height: 1.6;
-    }
-}
