@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Review this part and modify it to your liking -->
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>tharukackasthuri</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style-project.css">
+    <!-- font for the quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!-- font for the body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <!-- font for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="center">
+        <section class="thesis-title-wrap">
+            <h2 class="thesis-title">
+                Exploring Fairness and Client Behavior in Heterogeneous Federated Learning Scenarios
+            </h2>
+        </section>
+        <section class="thesis-section">
+            <p>
+                Federated Learning (FL) is a promising distributed learning method that enables edge devices to
+                collaboratively train a shared model without sharing their raw data thus preserving privacy. However, in
+                practical implementations, client data are typically
+                non-independent and identically distributed (non-IID). This resulting in heterogeneous learning dynamics
+                and
+                unequal benefits across participants. Improvements in average global accuracy can mask performance
+                degradation for disadvantaged clients, highlighting a structural fairness challenge in FL. This thesis
+                argues that achieving fairness under non-IID in FL requires explicit understanding and modeling of
+                client behavioral heterogeneity rather than uniform aggregation of client updates.
+            </p>
+            <p>
+                In addressing the issue of fairness in FL under data heterogeneity, the thesis first studies and
+                analyzes
+                clients' deviating behavior during the federated training process. An eccentricity-based approach is
+                introduced to quantify deviations in local models and data representations within the global model,
+                enabling
+                systematic identification of atypical contribution and benefit patterns. The insights gained are then
+                used
+                to develop novel fairness-aware FL solutions for heterogeneous distributed learning setups. First it
+                proposes a fairness-aware aggregation framework that adapts client influence based on local performance
+                signals. By dynamically weighting client updates and adjusting local optimization to emphasize hard
+                examples, the method reduces disparities across heterogeneous clients while maintaining competitive
+                global
+                performance. Second, the thesis introduces a clients distribution-aware framework that models latent
+                similarities among clients through persistent grouping based on label distributions. Cluster-level
+                models
+                and hierarchical knowledge distillation integrate inter-client structure into the learning process,
+                enhancing fairness metrics along with overall accuracy.
+            </p>
+            <p>
+                Across multiple benchmark datasets, the proposed approaches demonstrate that principled to modeling
+                heterogeneity can lead to measurable improvements in fairness without compromising global accuracy. The
+                three discussed studies together establishes a structured framework for mitigating unequal benefits in
+                FL
+                under non-IID data distributions.
+            </p>
+        </section>
+
+
+        <section class="thesis-section">
+            <h2>Included Papers</h2>
+
+            <div class="paper-item">
+                <span class="paper-title">
+                    Clients Behavior Monitoring in Federated Learning via Eccentricity Analysis
+                </span><br>
+
+                <span class="paper-authors">
+                    Tharuka Kasthuri Arachchige, Selim Ickin, Shahrooz Abghari, Veselka Boeva
+                </span>
+
+                <span class="paper-venue">
+                    IEEE International Conference on Evolving and Adaptive Intelligent Systems, 2024
+                </span>
+
+                <button class="abstract-btn" onclick="openAbstract('abstract-modal-fltrack')">
+                    Read abstract
+                </button>
+            </div>
+
+
+            <div class="paper-item">
+                <span class="paper-title">
+                    FedABoost: Fairness Aware Federated Learning with Adaptive Boosting
+                </span><br>
+                <span class="paper-authors">
+                    Tharuka Kasthuri Arachchige, Veselka Boeva, Shahrooz Abghari
+                </span>
+                <span class="paper-venue">
+                    3rd workshop on Advancements in Federated Learning, In Proceedings of the 18th European Conference
+                    on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2025)
+                </span>
+                <button class="abstract-btn" onclick="openAbstract('abstract-modal-fedaboost')">
+                    Read abstract
+                </button>
+            </div>
+
+            <div class="paper-item">
+                <span class="paper-title">
+                    Hierarchical Knowledge Distillation for Fair Federated Learning
+                </span><br>
+                <span class="paper-authors">
+                    Tharuka Kasthuri Arachchige, Veselka Boeva, Shahrooz Abghari
+                </span>
+                <span class="paper-venue">
+                    Submitted to the 19th European Conference
+                    on Machine Learning and Principles and Practice of Knowledge Discovery in Databases (ECML PKDD 2026)
+                </span>
+                <button class="abstract-btn" onclick="openAbstract('abstract-modal-defft')">
+                    Read abstract
+                </button>
+            </div>
+
+            </div>
+        </section>
+    </section>
+
+    <div id="abstract-modal-fltrack" class="modal-overlay" onclick="closeAbstract(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeAbstract()">×</button>
+
+            <h3>Clients Behavior Monitoring in Federated Learning via Eccentricity Analysis</h3>
+
+            <p>
+                The success of Federated Learning (FL) hinges upon the active participation and contributions of edge
+                devices as they collaboratively train a global model while preserving data privacy. Understanding the
+                behavior of individual clients within the FL framework is essential for enhancing model performance,
+                ensuring system reliability, and protecting data privacy. However, analyzing client behavior poses a
+                significant challenge due to the decentralized nature of FL, the variety of participating devices, and
+                the complex interplay between client models throughout the training process. This research proposes a
+                novel approach based on eccentricity analysis to address the challenges associated with understanding
+                the different clients' behavior in the federation. We study how the eccentricity analysis can be applied
+                to monitor the clients' behaviors through the training process by assessing the eccentricity metrics of
+                clients' local models and clients' data representation in the global model. The Kendall ranking method
+                is used for evaluating the correlations between the defined eccentricity metrics and the clients'
+                benefit from the federation and influence on the federation, respectively. Our initial experiments on a
+                publicly available data set demonstrate that the defined eccentricity measures can provide valuable
+                information for monitoring the clients' behavior and eventually identify clients with deviating
+                behavioral patterns.
+            </p>
+        </div>
+    </div>
+
+    <div id="abstract-modal-fedaboost" class="modal-overlay" onclick="closeAbstract(event)">
+        <div class="modal-content">
+            <button class="modal-close" onclick="closeAbstract()">×</button>
+
+            <h3>FedABoost: Fairness Aware Federated Learning with Adaptive Boosting</h3>
+
+            <p>
+                This work focuses on improving the performance and fairness of Federated Learning (FL) in non-IID
+                settings by enhancing model aggregation and boosting the training of under-performing clients. We
+                propose FedABoost, a novel FL framework that integrates a dynamic boosting mechanism and an
+                adaptive gradient aggregation strategy. Inspired by the weighting mechanism of the Multiclass AdaBoost
+                (SAMME) algorithm, our aggregation method assigns higher weights to clients with lower local
+                error rates, thereby promoting more reliable contributions to the global model. In parallel,
+                FedABoost dynamically boosts under-performing clients by adjusting the focal loss focusing
+                parameter, emphasizing hard-to-classify examples during local training. These mechanisms work together
+                to enhance the global model’s fairness by reducing disparities in client performance and encouraging
+                fair participation. We have evaluated FedABoost on three benchmark datasets: MNIST, FEMNIST,
+                and CIFAR10, and compared its performance with those of FedAvg and Ditto. The
+                results show that FedABoost achieves improved fairness and competitive performance. The
+                FedABoost code and the experimental results are available at
+                \href{https://github.com/tharukackasthuri/fedaboost.git}{GitHub}.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- footer -->
+    <footer>@tharukackasthuri 2026</footer>
+
+    <script>
+        function openAbstract(modalId) {
+            document.getElementById(modalId).style.display = "flex";
+        }
+
+        function closeAbstract(event) {
+            // Case 1: close button clicked (no event passed)
+            if (!event) {
+                document.querySelectorAll(".modal-overlay").forEach(modal => {
+                    modal.style.display = "none";
+                });
+                return;
+            }
+
+            // Case 2: overlay clicked
+            if (event.target.classList.contains("modal-overlay")) {
+                event.target.style.display = "none";
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

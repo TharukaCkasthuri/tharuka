@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Review this part and modify it to your liking -->
+    <meta name="description" content="Sample text for portfolio template meta tag">
+    <meta name="keywords" content="Sample text for portfolio template meta tag">
+    <meta name="author" content="Sample text for portfolio template meta tag">
+    <title>tharukackasthuri</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- This subpage also benefits from the about me, because of the media queries -->
+    <link rel="stylesheet" type="text/css" href="style-about-me.css">
+    <link rel="stylesheet" type="text/css" href="style-skill-set.css">
+    <!-- font for the quote -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet">
+    <!-- font for the body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap" rel="stylesheet">
+    <!-- font for headings -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="sticky">
+        <label for="drop" class="toggle" id="main-toggle">
+            <span class="nav-icon"></span>
+        </label>
+        <input type="checkbox" id="drop">
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about-me.html">About me</a></li>
+            <li><a href="thesis.html">Thesis</a></li>
+        </ul>
+    </nav>
+
+    <!-- hard skills -->
+    <section class="about">
+
+        <!-- 1) Short about me: left animation, right text -->
+        <section class="about-row about-row--anim-left">
+            <div class="about-anim" aria-hidden="true">
+                <div class="anim-placeholder">
+                    <img src="assets/about_me.png" alt="About me image">
+                </div>
+
+            </div>
+
+            <div class="about-text">
+                <h3>Who Am I?</h3>
+                <p>
+                    I am a PhD student at Blekinge Institute of Technology working on Federated Learning and
+                    trustworthy distributed AI systems. My research focuses on fairness challenges that arise when
+                    learning is decentralized and data remains local.
+                </p>
+            </div>
+        </section>
+
+        <!-- 2) Academic work: left text, right animation -->
+        <section class="about-row about-row--anim-right">
+            <div class="about-anim" aria-hidden="true">
+                <div class="anim-placeholder">
+                    <img src="assets/grad_me.png" alt="Grad me image">
+                </div>
+
+            </div>
+            <div class="about-text">
+                <div class="education-block">
+                    <h3>Education</h3>
+
+                    <ul class="education-list">
+                        <li>
+                            <span class="edu-degree">Ph.D. in Computer Science</span>
+                            <span class="edu-meta">
+                                Blekinge Institute of Technology, 2023 – Present
+                            </span>
+                            <span class="edu-focus">
+                                Federated Learning and Trustworthy Distributed AI Systems
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="edu-degree">M.Sc. in Big Data Analytics</span>
+                            <span class="edu-meta">
+                                Robert Gordon University, 2020 – 2022
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="edu-degree">B.Sc. (Hons) in Computer Science</span>
+                            <span class="edu-meta">
+                                University of Jaffna, 2015 – 2019
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 3) Industry: left animation, right text -->
+        <section class="about-row about-row--anim-left">
+            <div class="about-anim" aria-hidden="true">
+                <div class="anim-placeholder">
+                    <img src="assets/work_me.png" alt="Grad me image">
+                </div>
+            </div>
+
+            <div class="about-text">
+                <div class="experience-block">
+                    <h3>Professional Experience</h3>
+
+                    <ul class="experience-list">
+                        <li>
+                            <span class="exp-role">Researcher – Machine Learning</span>
+                            <span class="exp-meta">
+                                Jaseci Labs · 2022 – 2023
+                            </span>
+                            <span class="exp-focus">
+                                Research and development of AI plugins for a graph-based programming language;
+                                contributions to open-source tooling and technical documentation.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="exp-role">Engineer – AI / Machine Learning</span>
+                            <span class="exp-meta">
+                                Virtusa · 2021 – 2023
+                            </span>
+                            <span class="exp-focus">
+                                Development of conversational AI systems for a banking partner, including
+                                NLU data creation, model training, and performance optimization.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="exp-role">Machine Learning Engineer</span>
+                            <span class="exp-meta">
+                                Orel IT · 2020 – 2021
+                            </span>
+                            <span class="exp-focus">
+                                Design and deployment of recommendation and pricing optimization systems,
+                                including model training, validation, and cloud-based deployment.
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="exp-role">Junior Data Scientist</span>
+                            <span class="exp-meta">
+                                Innovation Quotient · 2019 – 2021
+                            </span>
+                            <span class="exp-focus">
+                                End-to-end data science workflows, client-facing analytics, and deployment
+                                of ML solutions on Linux-based cloud platforms.
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- 4) Skills: left text, right animation -->
+        <section class="about-row about-row--anim-right">
+            <div class="about-text">
+                <div class="skills-block">
+                    <h3>Skills</h3>
+
+                    <ul class="skills-list">
+                        <li>
+                            <span class="skill-role">Core</span>
+                            <span class="skill-focus">
+                                Federated Learning, Fairness, Trustworthy Distributed AI
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="skill-role">ML / NLP</span>
+                            <span class="skill-focus">
+                                Model training, evaluation, optimization, applied NLP
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="skill-role">Tools</span>
+                            <span class="skill-focus">
+                                Python, R, SQL, LaTeX
+                            </span>
+                        </li>
+
+                        <li>
+                            <span class="skill-role">Work Style</span>
+                            <span class="skill-focus">
+                                Research, writing, teaching, collaboration
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="about-anim" aria-hidden="true">
+                <div class="anim-placeholder">
+                    <img src="assets/skills_me.png" alt="Grad me image">
+                </div>
+            </div>
+        </section>
+
+        <!-- 5) Hobbies: left animation, right text -->
+        <section class="about-row about-row--anim-left">
+            <div class="about-anim" aria-hidden="true">
+                <div class="anim-placeholder">
+                    <img src="assets/hobby_me.png" alt="Grad me image">
+                </div>
+            </div>
+
+            <div class="about-text">
+                <div class="beyond-block">
+                    <h3>Beyond Research</h3>
+                    <p>
+                        Yoga, Swimming, Travel, and Dogs — Four solid ways to tackle intellectual burnout.
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </section>
+
+
+    <!-- footer -->
+    <footer>@tharukackasthuri 2026</footer>
+</body>
+
+</html>
