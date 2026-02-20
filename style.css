@@ -211,7 +211,7 @@ footer {
 
     border-radius: 18px;
     text-align: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .thesis-title {
@@ -279,7 +279,7 @@ footer {
 
     color: var(--soft-text);
     background-color: var(--pastel-green);
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -317,6 +317,7 @@ footer {
 
     background-color: rgba(255, 255, 255, 0.75);
     border-radius: 14px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -420,7 +421,7 @@ footer {
 
 
     border-radius: 32px;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -531,7 +532,7 @@ img {
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.06);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 
@@ -546,7 +547,7 @@ img {
 
     background: rgba(255, 250, 252, 0.9);
 
-
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
     border-radius: 22px;
 }
 
@@ -576,7 +577,7 @@ img {
     border-radius: 22px;
 
     background: rgba(246, 244, 252, 0.9);
-    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .section-title {
@@ -816,7 +817,7 @@ img {
 /* Placeholder box you can replace with Lottie/SVG/Canvas later */
 .anim-placeholder {
     width: 100%;
-    max-width: 360px;
+    max-width: 300px;
     aspect-ratio: 1 / 1;
     border-radius: 24px;
 
