@@ -238,6 +238,34 @@ footer {
     border-radius: 4px;
 }
 
+.thesis-meta {
+    margin-top: 0.7rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+
+    font-family: "Oswald", sans-serif;
+    font-size: 0.95rem;
+    letter-spacing: 0.04em;
+
+    color: #3c3c3c;
+    opacity: 0.95;
+}
+
+.thesis-separator {
+    opacity: 0.5;
+}
+
+.thesis-author {
+    font-weight: 600;
+}
+
+.thesis-university {
+    font-weight: 400;
+}
+
 .thesis-section {
     font-family: "Times New Roman", Times, serif;
     text-align: justify;
@@ -313,8 +341,14 @@ footer {
 
 .paper-authors {
     display: block;
-    color: #444;
+    color: #747272;
     margin-top: 0.2rem;
+}
+
+.author-me {
+    color: rgb(24, 24, 24);
+    /* muted teal-gray */
+    font-weight: 500;
 }
 
 .paper-venue {
@@ -604,25 +638,49 @@ img {
     margin-right: auto;
 }
 
-/* Abstract button */
-.abstract-btn {
+.btn-pill {
+    display: inline-block;
     margin-top: 0.8rem;
     padding: 0.4rem 1rem;
 
-    background: none;
-    border: 1.5px solid #7a6ccf;
+    border: 1.5px solid;
     border-radius: 20px;
 
-    color: #7a6ccf;
     font-size: 0.85rem;
+    line-height: 1;
+    /* critical */
+    box-sizing: border-box;
+    /* critical */
+
+    background: none;
     cursor: pointer;
+    text-decoration: none;
+
+    font-family: inherit;
+    font-weight: 400;
+    font-style: normal;
 
     transition: background 0.2s ease, color 0.2s ease;
 }
 
+.abstract-btn {
+    border-color: #7a6ccf;
+    color: #7a6ccf;
+}
+
 .abstract-btn:hover {
     background: #7a6ccf;
-    color: white;
+    color: #fff;
+}
+
+.paper-btn {
+    border-color: #5aa68c;
+    color: #5aa68c;
+}
+
+.paper-btn:hover {
+    background: #5aa68c;
+    color: #fff;
 }
 
 /* Modal overlay */
